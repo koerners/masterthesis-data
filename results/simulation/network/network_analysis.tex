@@ -1,0 +1,31 @@
+\begin{table}[]
+    \begin{tabular}{@{}lllllll@{}}
+        \toprule
+                   & Step & Nodes & \begin{tabular}[c]{@{}l@{}}Avg. \\ Neighbors\end{tabular} & \begin{tabular}[c]{@{}l@{}}Characteristic \\ path length\end{tabular} & \begin{tabular}[c]{@{}l@{}}Clustering \\ coefficient\end{tabular} & Heterogeneity \\ \midrule
+        Benchmark  & 100  & 303   & 6,9                       & 4,5                       & 0,62                      & 0,39          \\
+                   & 200  & 375   & 5,7                       & 5,8                       & 0,62                      & 0,42          \\
+                   & 300  & 100   & 2,3                       & 2                         & 0,26                      & 0,5           \\
+                   & 400  & 20    & 3,6                       & 1,1                       & 0,9                       & 0,14          \\
+                   & 500  & 1     & -                         & -                         & -                         & -             \\\midrule
+        Greenbeard & 100  & 287   & 6,2                       & 5,1                       & 0,65                      & 0,41          \\
+        (no fake)  & 200  & 388   & 4,9                       & 6,8                       & 0,55                      & 0,42          \\
+                   & 300  & 380   & 5,42                      & 6,1                       & 0,57                      & 0,39          \\
+                   & 400  & 379   & 5,1                       & 6,4                       & 0,58                      & 0,41          \\
+                   & 500  & 383   & 5                         & 7                         & 0,6                       & 0,39          \\\midrule
+        Reputation & 100  & 56    & 3,1                       & 4,1                       & 0,3                       & 0,64          \\
+                   & 200  & 14    & 2,7                       & 2,7                       & 0,6                       & 0,32          \\
+                   & 300  & 6     & 2                         & 1,3                       & 0,58                      & 0,35          \\
+                   & 400  & 0     & -                         & -                         & -                         & -             \\\midrule
+        Group      & 100  & 124   & 6,2                       & 4,2                       & 0,75                      & 0,35          \\
+                   & 200  & 287   & 6,4                       & 5                         & 0,65                      & 0,39          \\
+                   & 300  & 348   & 5,1                       & 7,2                       & 0,64                      & 0,42          \\
+                   & 400  & 360   & 5                         & 7,5                       & 0,62                      & 0,38          \\
+                   & 500  & 361   & 5,4                       & 6,8                       & 0,61                      & 0,38          \\\midrule
+        Culture    & 100  & 87    & 5,6                       & 2,9                       & 0,72                      & 0,4           \\
+                   & 200  & 172   & 5,9                       & 4,6                       & 0,66                      & 0,4           \\
+                   & 300  & 386   & 4,9                       & 6,2                       & 0,52                      & 0,37          \\
+                   & 400  & 375   & 4,8                       & 6,6                       & 0,56                      & 0,37          \\
+                   & 500  & 392   & 5,2                       & 6,7                       & 0,59                      & 0,4           \\ \bottomrule
+    \end{tabular}
+    \caption[Analysis of the network characteristics of all models]{Analysis of the network characteristics of all models for the first 500 steps with $child$ $bearing$ $cost = 6$, $life$ $expectancy = (50,70)$, $mutation$ $chance = 0.05$, $finding$ $max = 3$, $level$ $of$ $sacrifice = 0.5$, $min$ $relationship = 1$, $group$ $number = 5$, and $migration$ $rate = 0.05$. }
+\end{table}
