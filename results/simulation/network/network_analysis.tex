@@ -1,31 +1,40 @@
 \begin{table}[]
     \begin{tabular}{@{}lllllll@{}}
         \toprule
-                   & Step & Nodes & \begin{tabular}[c]{@{}l@{}}Avg. \\ Neighbors\end{tabular} & \begin{tabular}[c]{@{}l@{}}Characteristic \\ path length\end{tabular} & \begin{tabular}[c]{@{}l@{}}Clustering \\ coefficient\end{tabular} & Heterogeneity \\ \midrule
-        Benchmark  & 100  & 303   & 6,9                       & 4,5                       & 0,62                      & 0,39          \\
-                   & 200  & 375   & 5,7                       & 5,8                       & 0,62                      & 0,42          \\
-                   & 300  & 100   & 2,3                       & 2                         & 0,26                      & 0,5           \\
-                   & 400  & 20    & 3,6                       & 1,1                       & 0,9                       & 0,14          \\
-                   & 500  & 1     & -                         & -                         & -                         & -             \\\midrule
-        Greenbeard & 100  & 287   & 6,2                       & 5,1                       & 0,65                      & 0,41          \\
-        (no fake)  & 200  & 388   & 4,9                       & 6,8                       & 0,55                      & 0,42          \\
-                   & 300  & 380   & 5,42                      & 6,1                       & 0,57                      & 0,39          \\
-                   & 400  & 379   & 5,1                       & 6,4                       & 0,58                      & 0,41          \\
-                   & 500  & 383   & 5                         & 7                         & 0,6                       & 0,39          \\\midrule
-        Reputation & 100  & 56    & 3,1                       & 4,1                       & 0,3                       & 0,64          \\
-                   & 200  & 14    & 2,7                       & 2,7                       & 0,6                       & 0,32          \\
-                   & 300  & 6     & 2                         & 1,3                       & 0,58                      & 0,35          \\
-                   & 400  & 0     & -                         & -                         & -                         & -             \\\midrule
-        Group      & 100  & 124   & 6,2                       & 4,2                       & 0,75                      & 0,35          \\
-                   & 200  & 287   & 6,4                       & 5                         & 0,65                      & 0,39          \\
-                   & 300  & 348   & 5,1                       & 7,2                       & 0,64                      & 0,42          \\
-                   & 400  & 360   & 5                         & 7,5                       & 0,62                      & 0,38          \\
-                   & 500  & 361   & 5,4                       & 6,8                       & 0,61                      & 0,38          \\\midrule
-        Culture    & 100  & 87    & 5,6                       & 2,9                       & 0,72                      & 0,4           \\
-                   & 200  & 172   & 5,9                       & 4,6                       & 0,66                      & 0,4           \\
-                   & 300  & 386   & 4,9                       & 6,2                       & 0,52                      & 0,37          \\
-                   & 400  & 375   & 4,8                       & 6,6                       & 0,56                      & 0,37          \\
-                   & 500  & 392   & 5,2                       & 6,7                       & 0,59                      & 0,4           \\ \bottomrule
+& Step & Nodes & \begin{tabular}[c]{@{}l@{}}Avg. \\ neighbors\end{tabular} & \begin{tabular}[c]{@{}l@{}}Characteristic \\ path length\end{tabular} & \begin{tabular}[c]{@{}l@{}}Clustering \\ coefficient\end{tabular} & Heterogeneity \\ \midrule
+Benchmark      & 100  & 303   & 6.9                       & 4.5                       & 0.62                      & 0.39          \\
+& 200  & 375   & 5.7                       & 5.8                       & 0.62                      & 0.42          \\
+& 300  & 100   & 2.3                       & 2                         & 0.26                      & 0.5           \\
+& 400  & 20    & 3.6                       & 1.1                       & 0.9                       & 0.14          \\
+& 500  & 1     & -                         & -                         & -                         & -             \\\midrule
+Greenbeard     & 100  & 59    & 3.5                       & 5.4                       & 0.5                       & 0.44          \\
+(with fake)    & 200  & 2     & -                         & -                         & -                         & -             \\
+& 300  & 0     & -                         & -                         & -                         & -             \\\midrule
+Greenbeard     & 100  & 287   & 6.2                       & 5.1                       & 0.65                      & 0.41          \\
+(without fake) & 200  & 388   & 4.9                       & 6.8                       & 0.55                      & 0.42          \\
+& 300  & 380   & 5.42                      & 6.1                       & 0.57                      & 0.39          \\
+& 400  & 379   & 5.1                       & 6.4                       & 0.58                      & 0.41          \\
+& 500  & 383   & 5                         & 7                         & 0.6                       & 0.39          \\\midrule
+Kin selection  & 100  & 32    & 2.7                       & 3.9                       & 0.49                      & 0.53          \\
+& 200  & 47    & 5.3                       & 3.5                       & 0.78                      & 0.4           \\
+& 300  & 61    & 5.78                      & 3.5                       & 0.65                      & 0.45          \\
+& 400  & 116   & 5.5                       & 4.3                       & 0.63                      & 0.43          \\
+& 500  & 223   & 5.3                       & 5.2                       & 0.63                      & 0.43          \\\midrule
+Reputation     & 100  & 56    & 3.1                       & 4.1                       & 0.3                       & 0.64          \\
+& 200  & 14    & 2.7                       & 2.7                       & 0.6                       & 0.32          \\
+& 300  & 6     & 2                         & 1.3                       & 0.58                      & 0.35          \\
+& 400  & 0     & -                         & -                         & -                         & -             \\\midrule
+Group          & 100  & 124   & 6.2                       & 4.2                       & 0.75                      & 0.35          \\
+& 200  & 287   & 6.4                       & 5                         & 0.65                      & 0.39          \\
+& 300  & 348   & 5.1                       & 7.2                       & 0.64                      & 0.42          \\
+& 400  & 360   & 5                         & 7.5                       & 0.62                      & 0.38          \\
+& 500  & 361   & 5.4                       & 6.8                       & 0.61                      & 0.38          \\\midrule
+Culture        & 100  & 87    & 5.6                       & 2.9                       & 0.72                      & 0.4           \\
+& 200  & 172   & 5.9                       & 4.6                       & 0.66                      & 0.4           \\
+& 300  & 386   & 4.9                       & 6.2                       & 0.52                      & 0.37          \\
+& 400  & 375   & 4.8                       & 6.6                       & 0.56                      & 0.37          \\
+& 500  & 392   & 5.2                       & 6.7                       & 0.59                      & 0.4           \\ \bottomrule
     \end{tabular}
-    \caption[Analysis of the network characteristics of all models]{Analysis of the network characteristics of all models for the first 500 steps with $child$ $bearing$ $cost = 6$, $life$ $expectancy = (50,70)$, $mutation$ $chance = 0.05$, $finding$ $max = 3$, $level$ $of$ $sacrifice = 0.5$, $min$ $relationship = 1$, $group$ $number = 5$, and $migration$ $rate = 0.05$. }
+\caption[Network characteristics of all models]{Network characteristics of all models for the first 500 steps with $child$ $bearing$ $cost = 6$, $life$ $expectancy = (60,70)$, $mutation$ $chance = 0.05$, $finding$ $max = 3$, $level$ $of$ $sacrifice = 0.5$, $min$ $relationship = 1$, $group$ $number = 5$, and $migration$ $rate = 0.05$. The term \textit{average neighbors} indicates the average connectivity of a node in the network. \textit{Characteristic path length} gives the expected distance between two connected nodes. The \textit{clustering coefficient} is the average of the clustering coefficients for all nodes in the network. The \textit{heterogeneity} reflects the tendency of a network to contain hub nodes. \cite{NetworkAnalyzer.18.05.2018}}
+\label{tab:network-analysis}
 \end{table}
