@@ -19,7 +19,7 @@ $(document).ready(function() {
             optionsArray.push(options[i]);
         }
         optionsArray = optionsArray.sort(function(a, b) {
-            return a.innerHTML.toLowerCase().charCodeAt(0) - b.innerHTML.toLowerCase().charCodeAt(0);
+            return a.innerHTML.toLowerCase().localeCompare(b.innerHTML.toLowerCase())
         });
 
         for (var i = 0; i <= options.length; i++) {
